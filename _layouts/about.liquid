@@ -3,15 +3,8 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        Crafting Innovative Software Solutions
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    {% include figure.liquid path="assets/img/logo-white.png" class="img-fluid repo-img-dark" width="350px"%}
+    {% include figure.liquid path="assets/img/logo.png" class="img-fluid repo-img-light" width="350px" %}
   </header>
 
   <article>

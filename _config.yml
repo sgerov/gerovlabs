@@ -6,7 +6,7 @@ title: GerovLabs # the website title (if blank, full name will be used instead)
 first_name: Sava
 middle_name: 
 last_name: Gerov
-email: sava@gerov.es
+email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   GerovLabs is a Custom software development, technical leadership and consulting company.
 footer_text:

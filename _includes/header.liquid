@@ -17,7 +17,8 @@
               {{- site.last_name -}}
             {% endif %}
           {% else %}
-            <img src="/assets/img/logo.png" height="56px">
+            {% include figure.liquid path="assets/img/logo-white.png" class="repo-img-dark" width="70px" %}
+            {% include figure.liquid path="assets/img/logo.png" class="repo-img-light" width="70px" %}
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
