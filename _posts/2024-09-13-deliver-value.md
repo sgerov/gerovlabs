@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Delivering Value Over Process
+title: Delivering value over process
 date: 2024-09-13 00:00:00
-description: The real goal of any software project should be rather simple: delivering value.
-tags: software
+description: The real goal of any software project should be rather simple - delivering value.
+tags:
 categories: core-values
 featured: false
 ---
 
-Processes are everywhere! Scrum, Kanban, Scrumban, no-estimates - the options are endless. And while processes provide structure and discipline, the real goal of any software project should be rather simple: **delivering value**.
+Processes are everywhere! Scrum, Kanban, Scrumban, no-estimates, ADRs - the options are endless. And while processes provide structure and discipline, the real goal of any software project should be rather simple: **delivering value**.
 
 At **Gerov Labs**, I believe that **value delivery trumps rigid adherence to process**. While I respect and utilize established methodologies by the industry, I understand that clients don't hire us for the method - they hire us for the outcome.
 

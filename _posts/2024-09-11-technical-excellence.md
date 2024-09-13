@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Technical Excellence
+title: Technical excellence
 date: 2024-09-11 20:00:00
 description: Building high-quality systems that last.
-tags: software
+tags:
 categories: core-values
 featured: false
 ---

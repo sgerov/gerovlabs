@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Continuous Learning and Adaptability
+title: Continuous learning and adaptability
 date: 2024-09-12 00:00:00
 description: In software engineering, things change fast and often.
-tags: software
+tags:
 categories: core-values
 featured: false
 ---

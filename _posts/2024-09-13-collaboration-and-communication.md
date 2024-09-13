@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Collaboration and Communication
+title: Collaboration and communication
 date: 2024-09-13 00:00:00
 description: Managing expectations and ensuring alignment across and within teams.
-tags: software
+tags:
 categories: core-values
 featured: false
 ---
@@ -21,4 +21,4 @@ In addition, understanding team dynamics, showing empathy, and maintaining trans
 
 Whether it's refining written communication skills, **ensuring clarity** in decision-making, or creating a culture of **continuous feedback**, effective collaboration goes beyond processes! It’s about fostering strong, resilient **relationships** that drive the project forward.
 
-Fore more on effective collaboration, please check the [Integrity and Transparency]({% post_url 2024-09-14-integrity-and-transparency %}) article.
+Fore more on effective collaboration, please check the [Integrity and Transparency]({% post_url 2024-09-13-integrity-and-transparency %}) article.

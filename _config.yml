@@ -9,7 +9,7 @@ last_name: Gerov
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   GerovLabs is a Custom software development, technical leadership and consulting company.
-footer_text: Gerovlabs ltd
+footer_text: Gerovlabs ltd - sava [AT] gerov.es
 keywords: software development, consulting, freelance, tech, leadership # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -197,7 +197,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -298,7 +298,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["ruby", "AI"] # these tags will be displayed on the front page of your blog
-display_categories: ["software", "core values"] # these categories will be displayed on the front page of your blog
+display_categories: ["core values"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

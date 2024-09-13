@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Simplicity and Pragmatism
-date: 2025-09-14 00:00:00
+title: Simplicity and pragmatism
+date: 2024-09-13 00:00:00
 description: The power of doing less.
-tags: software
+tags:
 categories: core-values
 featured: false
 ---

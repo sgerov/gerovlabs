@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Integrity and Transparency
-date: 2024-09-14 00:00:00
+title: Integrity and transparency
+date: 2024-09-13 00:00:00
 description: By being upfront about risks, challenges, and solutions, you earn the trust of clients, stakeholders, and your team.
-tags: software
+tags:
 categories: core-values
 featured: false
 ---
