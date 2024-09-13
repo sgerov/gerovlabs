@@ -2,7 +2,7 @@
 layout: post
 title: Technical Excellence
 date: 2024-09-11 20:00:00
-description: Building systems that last
+description: Building high-quality systems that last.
 tags: software
 categories: core-values
 featured: false
@@ -20,7 +20,7 @@ Clean code is more than just coding standards—it's a mindset focused on **read
 >
 > * **Functional programming principles** contribute by eliminating side effects, making code more predictable and easier to reason about.
 > * **Static typing** adds a layer of safety by catching errors at compile time, reducing uncertainty and preventing runtime issues. 
-> * **Modularity** and **composition over inheritance** promote small, independent services that align with the organization’s structure. This segmentation fosters more adaptable teams and systems, enhancing agility and maintainability.
+> * **Modularity** and **composition over inheritance** promote small, independent services that align with the organization's structure. This segmentation fosters more adaptable teams and systems, enhancing agility and maintainability.
 {: .block-tip }
 
 ### Continuous integration/continuous delivery
@@ -90,4 +90,4 @@ When combined, these practices create a more cohesive, efficient, and adaptable 
 
 ### Conclusion
 
-By embracing practices like Clean Code, CI/CD, DevOps, Observability, Agile, and DDD, organizations can create software systems that not only meet today’s requirements but can scale and evolve to meet the needs of tomorrow. These practices provide a foundation for building resilient, secure, and maintainable systems that continue to deliver value over time, helping organizations stay competitive and responsive in a fast-changing landscape.
+By embracing practices like Clean Code, CI/CD, DevOps, Observability, Agile, and DDD, organizations can create software systems that not only meet today's requirements but can scale and evolve to meet the needs of tomorrow. These practices provide a foundation for building resilient, secure, and maintainable systems that continue to deliver value over time, helping organizations stay competitive and responsive in a fast-changing landscape.
