@@ -14,7 +14,7 @@ Effective collaboration and communication involves many aspects, from structured
 
 > ##### Example
 >
-> Architectural Decision Records (ADRs) provide clarity and accountability, while proactive feedback loops and regular retrospectives ensure that issues are surfaced and addressed early. 
+> Architectural Decision Records (ADRs) provide clarity and accountability, while proactive feedback loops and/or regular retrospectives ensure issues are surfaced and addressed early. 
 {: .block-tip }
 
 In addition, understanding team dynamics, showing empathy, and maintaining transparency can drastically **improve collaboration**. By fostering **psychological safety**, team members are encouraged to share their ideas and concerns freely, creating a culture where everyone feels heard and respected. Trust is built not just through communication, but through actions, follow-through, and mutual accountability.

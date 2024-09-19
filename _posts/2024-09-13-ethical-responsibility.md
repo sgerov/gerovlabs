@@ -18,7 +18,7 @@ Software is a powerful tool. It can solve complex problems, improve efficiency, 
 
 > ##### Example
 >
-> [Camgridge Analytica](https://www.theguardian.com/technology/commentisfree/2020/oct/15/cambridge-analytica-threat-democracy-facebook-big-tech) is a good example usage of a product that started as a way to connect peers in Universities and escalated to shaping our democracies.
+> [Camgridge Analytica](https://www.theguardian.com/technology/commentisfree/2020/oct/15/cambridge-analytica-threat-democracy-facebook-big-tech) case is a good example of a product usage that started as a way to connect peers in Universities and escalated to shaping our democracies.
 {: .block-tip }
 
 This is why **ethical reflection** is essential at every stage of the software development process. When we build software, we aren't just delivering code. We are embedding assumptions, values, and biases into systems. It's our duty to ensure that these systems operate in a way that is **fair, just, and responsible**.
@@ -39,4 +39,4 @@ One of the dangerous mindsets in development is the belief that **"we're just bu
 
 That implies having tough conversations about the ethical implications of our decisions. It implies working with diverse teams to ensure that we're considering multiple perspectives. It implies to be willing to slow down and reconsider our approach if we realize that what we're building might cause harm.
 
-Ethical responsibility is not a burden. It's a **core principle** of good software development. When we take the time to build ethically, we build systems that are **trustworthy, sustainable**, and beneficial to society.
+Ethical responsibility is not a burden. It's a **core principle** of software development. When we take the time to build ethically, we build systems that are **trustworthy, sustainable**, and beneficial to society.

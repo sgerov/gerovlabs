@@ -14,7 +14,7 @@ Several high-level software delivery practices complement each other in achievin
 
 ### Clean code
 
-Clean code is more than just coding standards—it's a mindset focused on **readability, simplicity, and maintainability**. Code that is easy to understand and modify lowers the cost of adding new features or fixing bugs. As systems scale, the ability to make changes without introducing regressions becomes critical.
+Clean code is more than just coding standards or patterns: it's a mindset focused on **readability, simplicity, and maintainability**. Code that is easy to understand and modify lowers the cost of adding new features or fixing bugs. As systems scale, the ability to make changes without introducing regressions becomes critical.
 
 > ##### Example
 >
@@ -86,7 +86,7 @@ DDD emphasizes designing software around the business domain, helping create sys
 > * The **Inverse Conway Maneuver** suggests aligning the organization's structure with the architecture of the software to reduce friction between teams and system development.
 {: .block-tip }
 
-When combined, these practices create a more cohesive, efficient, and adaptable software development process. DDD ensures that software evolves in tandem with business needs, while cross-functional teams promote collaboration, further aligning development with business objectives.
+When combined, DDD practices create a more cohesive, efficient, and adaptable software development process. DDD ensures that software evolves in tandem with business needs, while cross-functional teams promote collaboration, further aligning development with business objectives.
 
 ### Conclusion
 

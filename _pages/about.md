@@ -22,6 +22,6 @@ At [Gerov Labs](https://gerovlabs.com), I offer over a decade of expertise in so
 - [Continuous learning and adaptability]({% post_url 2024-09-12-continuous-learning %}): In software engineering, things change fast and often
 - [Collaboration and communication]({% post_url 2024-09-13-collaboration-and-communication %}): Managing expectations and ensuring alignment across and within teams
 - [Delivering value over process]({% post_url 2024-09-13-deliver-value %}): The real goal of any software project should be rather simple - delivering value
-- [Integrity and Transparency]({% post_url 2024-09-13-integrity-and-transparency %}): Full-stack expertise with a focus on robust backend systems, delivering scalable, reliable, and high-performance solutions
+- [Integrity and Transparency]({% post_url 2024-09-13-integrity-and-transparency %}): By being upfront about risks, challenges, and solutions we earn the trust of clients, stakeholders, and team
 - [Simplicity and pragmatism]({% post_url 2024-09-13-simplicity-and-pragmatism %}): The power of doing less
 - [Ethical responsibility]({% post_url 2024-09-13-ethical-responsibility %}): The systems we design and the software we create shape industries, impact individuals, and define modern society
