@@ -240,6 +240,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - node_modules
+  - ai-models
 keep_files:
   - CNAME
   - .nojekyll

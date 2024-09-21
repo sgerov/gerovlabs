@@ -10,4 +10,5 @@ Gemfile.lock
 assets/libs/
 node_modules/
 vendor
-.idea
+ai-models/node_modules/
+ai-models/build/
