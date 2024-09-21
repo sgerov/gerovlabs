@@ -241,7 +241,7 @@ exclude:
   - readme_preview/
   - vendor
   - node_modules
-  - ai-models
+  - dev-ai-models
 keep_files:
   - CNAME
   - .nojekyll
