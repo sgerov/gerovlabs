@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#root {
+  background-color: #282c34;
+  color: white;
+  a {
+    color: #61dafb;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+} */
+
+.box {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.hover-box {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hover-box:hover {
+  transform: scale(1.05);
+}
+
+.box-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ensure image is centered horizontally when the layout stacks on mobile */
+@media (max-width: 576px) {
+  .box-image {
+    height: 200px; /* Set a fixed height for smaller screens */
+    width: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
   }
-  to {
-    transform: rotate(360deg);
+
+  .box-text {
+    font-size: 1.5rem; /* Reduce text size on mobile */
+    padding: 10px; /* Add some padding for better spacing */
+    text-align: center;
   }
 }
