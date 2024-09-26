@@ -31,6 +31,7 @@
 .box-image {
   height: 100%;
   object-fit: cover;
+  border: 1px #61dafb solid;
 }
 
 /* Ensure image is centered horizontally when the layout stacks on mobile */

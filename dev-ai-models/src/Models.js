@@ -33,7 +33,7 @@ function Models() {
             imageSrc="/ai-models/lotr-races.jpg"
             text="LOTR races"
             link="/lotr-races"
-            description="Recognises LOTR races frrom pictures. First finetuned Resnet18 classifier"
+            description="Recognises LOTR races from pictures. First finetuned Resnet18 classifier"
           />
         </Col>
       </Row>
