@@ -24,6 +24,9 @@ const ImageUploadPage = () => {
     maxFiles: 1,
   });
 
+  const userAgent =(navigator.userAgent || window.opera || navigator.vendor).toLowerCase();
+  const isMobile = /iphone|android|mobile|ipad|tablet/i.test(userAgent);
+
   const startCamera = () => {
     const video = document.getElementById("cameraStream");
 
@@ -135,12 +138,12 @@ const ImageUploadPage = () => {
           <div
             {...getRootProps()}
             style={{
-              border: "2px dashed #007bff",
+              border: "2px dashed #4a4a4a",
               padding: "20px",
               textAlign: "center",
               cursor: "pointer",
               borderRadius: "10px",
-              backgroundColor: isDragActive ? "#e9ecef" : "transparent",
+              backgroundColor: isDragActive ? "#676363" : "transparent",
               marginBottom: "20px",
             }}
           >
@@ -148,7 +151,11 @@ const ImageUploadPage = () => {
             {isDragActive ? (
               <p>Drop the file here...</p>
             ) : (
-              <p>Drag & drop an image here, or click to select a file</p>
+              isMobile ? (
+                <p>Tap here to upload or take a photo</p>
+              ) : (
+                <p>Drag & drop an image here, or click to select a file</p>
+              )
             )}
           </div>
         </Col>
@@ -167,21 +174,26 @@ const ImageUploadPage = () => {
               <Button variant="success mb-2" onClick={handleInference} disabled={!uploadedImage || loading}>
                 {loading ? (
                   <>
-                    <Spinner animation="border" size="sm" /> Analyzing...
+                    🧠&nbsp; <Spinner animation="border" size="sm" />
                   </>
                 ) : (
-                  "🧠\u00A0 run model"
+                  "▷\u00A0 run"
                 )}
               </Button>
             </Col>
-            <Col>
+            { !isMobile && (
+            <Col className="col-10">
               <Button variant="primary mb-2 mx-2" onClick={startCamera} disabled={isCameraActive}>
                 📷&nbsp; use camera
+              </Button>
+              <Button variant="secondary mb-2 mx-2" onClick={stopCamera} disabled={!isCameraActive}>
+                🛑&nbsp; stop camera
               </Button>
               <Button variant="primary mb-2 mx-2" onClick={handleTakePicture} disabled={!isCameraActive}>
                 📸&nbsp; snapshot
               </Button>
             </Col>
+            )}
             </Row>
           </div>
         </Col>
