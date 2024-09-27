@@ -93,7 +93,6 @@ const ImageUploadPage = () => {
       const base64Image = await fileToBase64(uploadedImage);
 
       const response = await fetch('https://api.gerovlabs.com/v1/predict/', {
-        mode: 'no-cors',
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -103,7 +102,7 @@ const ImageUploadPage = () => {
         }),
       });
 
-      const jsonResponse = await response.text();
+      const jsonResponse = await response.json();
       setResult(jsonResponse);
 
     } catch (error) {
@@ -120,7 +119,7 @@ const ImageUploadPage = () => {
       .slice(0, 4);
   
     return sortedPredictions.map(([race, percentage], index) => (
-      <Card key={index} className="mb-3 mx-2" bg="dark" text="light" style={{ border: '1px solid #4a4a4a', width: '18rem' }}>
+      <Card key={index} className="mb-3 mx-2" bg="dark" text="light" style={{ border: '1px solid #4a4a4a' }}>
         <Card.Body>
           <Card.Title>{race}</Card.Title>
           <ProgressBar now={percentage * 100} label={`${(percentage * 100).toFixed(2)}%`} />
@@ -174,7 +173,7 @@ const ImageUploadPage = () => {
               <Button variant="success mb-2" onClick={handleInference} disabled={!uploadedImage || loading}>
                 {loading ? (
                   <>
-                    🧠&nbsp; <Spinner animation="border" size="sm" />
+                    ▷&nbsp; <Spinner animation="border" size="sm" />
                   </>
                 ) : (
                   "▷\u00A0 run"
