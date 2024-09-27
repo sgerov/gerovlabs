@@ -1,8 +1,8 @@
-#root {
-  background-color: #282c34;
-  color: white;
+body {
+  background-color: #282c34 !important;
+  color: white !important;
   a {
-    color: #61dafb;
+    color: #61dafb !important;
   }
 }
 
