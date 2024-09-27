@@ -92,7 +92,7 @@ const ImageUploadPage = () => {
     try {
       const base64Image = await fileToBase64(uploadedImage);
 
-      const response = await fetch('http://api.gerovlabs.com/v1/predict/', {
+      const response = await fetch('https://api.gerovlabs.com/v1/predict/', {
         mode: 'no-cors',
         method: 'POST',
         headers: {
@@ -103,7 +103,7 @@ const ImageUploadPage = () => {
         }),
       });
 
-      const jsonResponse = await response.json();
+      const jsonResponse = await response.text();
       setResult(jsonResponse);
 
     } catch (error) {
