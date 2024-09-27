@@ -92,8 +92,8 @@ const ImageUploadPage = () => {
     try {
       const base64Image = await fileToBase64(uploadedImage);
 
-      const response = await fetch('https://api.gerovlabs.com/v1/predict/', {
-        mode: 'cors',
+      const response = await fetch('http://api.gerovlabs.com/v1/predict/', {
+        mode: 'no-cors',
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
