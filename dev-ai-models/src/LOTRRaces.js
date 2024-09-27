@@ -131,7 +131,7 @@ const ImageUploadPage = () => {
 
   return (
     <Container className="py-4">
-      <h2 className="text-center mb-4">LOTR Race classificator</h2>
+      <h2 className="text-center mb-4">LOTR Race from image</h2>
       <Row>
         <Col>
           <div

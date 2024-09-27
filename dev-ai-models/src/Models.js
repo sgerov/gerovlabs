@@ -5,7 +5,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 const Item = ({ imageSrc, text, description, link }) => {
     return (
     <Link to={link} className="box">
-        <Row className="hover-box">
+        <Row className="hover-box p-4">
           <Col xs={12} className="d-flex justify-content-center align-items-center p-0">
             <Image
               src={imageSrc}
@@ -27,13 +27,13 @@ const Item = ({ imageSrc, text, description, link }) => {
 function Models() {
   return (
     <Container className="h-100">
-      <Row className="pt-4">
+      <Row className="pb-4">
         <Col xs={12} md={6} lg={4} className="mb-4">
           <Item
             imageSrc="/ai-models/lotr-races.jpg"
-            text="LOTR races"
+            text="LOTR Race"
             link="/lotr-races"
-            description="Recognises LOTR races from pictures. First finetuned Resnet18 classifier"
+            description="Finetuned Resnet-18 classifier that recognises LOTR races from their movie photos"
           />
         </Col>
       </Row>
