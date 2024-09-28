@@ -116,7 +116,7 @@ const ImageUploadPage = () => {
   const renderPredictionCards = (predictions) => {
     const sortedPredictions = Object.entries(predictions)
       .sort(([, a], [, b]) => b - a) // Sort by percentage in descending order
-      .slice(0, 4);
+      .slice(0, 3);
   
     return sortedPredictions.map(([race, percentage], index) => (
       <Card key={index} className="mb-3 mx-2" bg="dark" text="light" style={{ border: '1px solid #4a4a4a' }}>
