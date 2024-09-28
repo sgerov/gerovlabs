@@ -1,21 +1,22 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const ModelCard = ({ name, type, dataset, description, link }) => {
   return (
-    <Card className="mb-4 bg-dark text-white">
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">
-          {type} - Dataset: {dataset}
-        </Card.Subtitle>
-        <Card.Text>{description}</Card.Text>
-        <div className="text-center">
-          <Button variant="dark" href={link}>
-            View Model
-          </Button>
-        </div>
-      </Card.Body>
-    </Card>
+    <Link to={link} className='text-muted'>
+      <Card className="mb-4 bg-dark text-white">
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Subtitle className="mb-2 text-secondary">
+            {type} - Dataset: {dataset}
+          </Card.Subtitle>
+          <Card.Text>{description}</Card.Text>
+          <div className="text-center text-info">
+              View Model
+          </div>
+        </Card.Body>
+      </Card>
+    </Link>
   );
 };
 
@@ -26,11 +27,11 @@ function ModelsShowcase() {
       <Row>
         <Col md={4} className="hover-box">
           <ModelCard
-            name="Image Classifier (LOTR)"
+            name="LOTR races"
             type="CNN Classifier"
-            dataset="1000 LOTR images"
-            description="A deep learning model fine-tuned to classify images into the different LOTR races using a custom dataset of 1000 images."
-            link="/ai-models/lotr-races"
+            dataset="1000 DDG images"
+            description="A resnet18 deep learning model fine-tuned to classify images into the different LOTR races."
+            link="/lotr-races"
           />
         </Col>
       </Row>
