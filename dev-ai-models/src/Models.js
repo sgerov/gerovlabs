@@ -1,39 +1,36 @@
-import { Link } from 'react-router-dom';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-
-const Item = ({ imageSrc, text, description, link }) => {
-    return (
-    <Link to={link} className="box">
-        <Row className="hover-box p-4">
-          <Col xs={12} className="d-flex justify-content-center align-items-center p-0">
-            <Image
-              src={imageSrc}
-              fluid
-              className="box-image"
-            />
-          </Col>
-          <Col xs={12} className="d-flex justify-content-center align-items-center">
-            <h1 className="box-text">{text}</h1>
-          </Col>
-          <Col xs={12} className="text-center">
-            <p className="small">{description}</p>
-          </Col>
-        </Row>
-    </Link>
-    );
-  };
-
-function Models() {
+const ModelCard = ({ name, type, dataset, description, link }) => {
   return (
-    <Container className="h-100">
-      <Row className="pb-4">
-        <Col xs={12} md={6} lg={4} className="mb-4">
-          <Item
-            imageSrc="/ai-models/lotr-races.jpg"
-            text="LOTR Race"
-            link="/lotr-races"
-            description="Finetuned Resnet-18 classifier that recognises LOTR races from their movie photos"
+    <Card className="mb-4 bg-dark text-white">
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">
+          {type} - Dataset: {dataset}
+        </Card.Subtitle>
+        <Card.Text>{description}</Card.Text>
+        <div className="text-center">
+          <Button variant="dark" href={link}>
+            View Model
+          </Button>
+        </div>
+      </Card.Body>
+    </Card>
+  );
+};
+
+function ModelsShowcase() {
+  return (
+    <Container className="p-4">
+      <h2 className="text-center mb-4">AI trained models</h2>
+      <Row>
+        <Col md={4} className="hover-box">
+          <ModelCard
+            name="Image Classifier (LOTR)"
+            type="CNN Classifier"
+            dataset="1000 LOTR images"
+            description="A deep learning model fine-tuned to classify images into the different LOTR races using a custom dataset of 1000 images."
+            link="/ai-models/lotr-races"
           />
         </Col>
       </Row>
@@ -41,4 +38,4 @@ function Models() {
   );
 }
 
-export default Models;
+export default ModelsShowcase;

@@ -1,0 +1,12 @@
+body {
+    background-color: #212529; /* Dark background */
+  }
+  
+  h2 {
+    color: #f8f9fa; /* White text for header */
+  }
+  
+  .card {
+    border: 1px solid #343a40; /* Light border for better visibility */
+  }
+  

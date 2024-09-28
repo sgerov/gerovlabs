@@ -122,7 +122,7 @@ const ImageUploadPage = () => {
       <Card key={index} className="mb-3 mx-2" bg="dark" text="light" style={{ border: '1px solid #4a4a4a' }}>
         <Card.Body>
           <Card.Title>{race}</Card.Title>
-          <ProgressBar now={percentage * 100} label={`${(percentage * 100).toFixed(2)}%`} />
+          <ProgressBar animated now={percentage * 100} label={`${(percentage * 100).toFixed(0)}%`} />
         </Card.Body>
       </Card>
     ));
@@ -130,10 +130,10 @@ const ImageUploadPage = () => {
 
 
   return (
-    <Container className="py-4">
-      <h2 className="text-center mb-4">LOTR Race from image</h2>
+    <Container className="p-4">
+      <h2 className="text-center mb-4">Image Classifier (LOTR)</h2>
       <Row>
-        <Col>
+        <Col className="col-6">
           <div
             {...getRootProps()}
             style={{
@@ -159,42 +159,48 @@ const ImageUploadPage = () => {
           </div>
         </Col>
         <Col>
-        <div
-            style={{
-              padding: "20px",
-              textAlign: "center",
-              borderRadius: "10px",
-              backgroundColor: "transparent",
-              marginBottom: "20px",
-            }}
-          >
-            <Row className="mb-4 text-center">
-            <Col>
-              <Button variant="success mb-2" onClick={handleInference} disabled={!uploadedImage || loading}>
-                {loading ? (
-                  <>
-                    ▷&nbsp; <Spinner animation="border" size="sm" />
-                  </>
-                ) : (
-                  "▷\u00A0 run"
-                )}
-              </Button>
-            </Col>
-            { !isMobile && (
-            <Col className="col-10">
-              <Button variant="primary mb-2 mx-2" onClick={startCamera} disabled={isCameraActive}>
-                📷&nbsp; use camera
-              </Button>
-              <Button variant="secondary mb-2 mx-2" onClick={stopCamera} disabled={!isCameraActive}>
-                🛑&nbsp; stop camera
-              </Button>
-              <Button variant="primary mb-2 mx-2" onClick={handleTakePicture} disabled={!isCameraActive}>
-                📸&nbsp; snapshot
-              </Button>
-            </Col>
+          <Row className="mb-4">
+          { !isMobile && (
+              <Col className="col-8">
+                <Row className="text-center"><Col className="col-12">... or camera:</Col></Row>
+                <Row className="text-center">
+                  <Col>
+                    <Button variant="dark m-2" onClick={startCamera} disabled={isCameraActive}>
+                      ▶️
+                    </Button>
+                  </Col>
+                  <Col>
+                    <Button variant="dark m-2" onClick={stopCamera} disabled={!isCameraActive}>
+                      ⏹
+                    </Button>
+                  </Col>
+                  <Col>
+                  <Button variant="dark m-2" onClick={handleTakePicture} disabled={!isCameraActive}>
+                    📸
+                  </Button>
+                  </Col>
+                </Row>
+              </Col>
             )}
-            </Row>
-          </div>
+            <Col>
+            { !isMobile && (
+              <Row className="text-center">
+                <Col>model:</Col>
+              </Row>
+            )}
+              <Row className="text-center">
+                  <Button variant="primary" className="m-2" onClick={handleInference} disabled={!uploadedImage || loading}>
+                    {loading ? (
+                      <>
+                        ▶️&nbsp; <Spinner animation="border" size="sm" />
+                      </>
+                    ) : (
+                      "▶"
+                    )}
+                  </Button>
+              </Row>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <Row className="mb-4" fluid>
