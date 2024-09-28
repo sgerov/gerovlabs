@@ -162,7 +162,7 @@ const ImageUploadPage = () => {
           <Row className="mb-4">
           { !isMobile && (
               <Col className="col-8">
-                <Row className="text-center"><Col className="col-12">... or camera:</Col></Row>
+                <Row className="text-center"><Col className="col-12">or use your cam</Col></Row>
                 <Row className="text-center">
                   <Col>
                     <Button variant="dark m-2" onClick={startCamera} disabled={isCameraActive}>
@@ -171,7 +171,7 @@ const ImageUploadPage = () => {
                   </Col>
                   <Col>
                     <Button variant="dark m-2" onClick={stopCamera} disabled={!isCameraActive}>
-                      ⏹
+                      ◽️
                     </Button>
                   </Col>
                   <Col>
@@ -184,18 +184,18 @@ const ImageUploadPage = () => {
             )}
             <Col>
             { !isMobile && (
-              <Row className="text-center">
-                <Col>model:</Col>
+              <Row className="text-center mb-2">
+                <Col>AI</Col>
               </Row>
             )}
               <Row className="text-center">
-                  <Button variant="primary" className="m-2" onClick={handleInference} disabled={!uploadedImage || loading}>
+                  <Button variant="success" className="mr-4" onClick={handleInference} disabled={!uploadedImage || loading}>
                     {loading ? (
                       <>
-                        ▶️&nbsp; <Spinner animation="border" size="sm" />
+                        <Spinner animation="border" size="sm" />
                       </>
                     ) : (
-                      "▶"
+                      "Process"
                     )}
                   </Button>
               </Row>
