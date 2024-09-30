@@ -23,3 +23,17 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+pre[class="typogram"] {
+  display: flex;
+  justify-content: center;   /* Center the content horizontally */
+  text-align: center;        /* Center the text itself */
+  white-space: pre;          /* Preserve the monospace spacing */
+  padding: 10px;
+}
+
+pre[class="typogram"] code {
+  font-family: monospace;    /* Ensure monospace font */
+  text-align: center;
+  display: block;            /* Block to ensure full width usage */
+}
