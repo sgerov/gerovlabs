@@ -53,7 +53,7 @@ def fetch_images_for_race():
 
 Training and cleaning the dataset is well covered in [the second chapter](https://course.fast.ai/Lessons/lesson2.html) of the fast.ai course although I'll share some issues encountered on the way:
 
-{% include figure.liquid loading="eager" path="assets/img/after-cleaning.png" class="img-fluid rounded z-depth-1 float-right ml-2" width="250px" %}
+{% include figure.liquid loading="eager" path="assets/img/after-cleaning.png" class="img-fluid rounded float-right mx-2 w-50"%}
 
 - `Duplicate images`: I realised quite a few of the images I was downloading were duplicates
 - `Using a non-structured dataset`: searching the web for images implies a huge bias on what kind of results you would get and how accurate it is. I had to adjust my queries multiple times until I liked enough the shape of the data.
