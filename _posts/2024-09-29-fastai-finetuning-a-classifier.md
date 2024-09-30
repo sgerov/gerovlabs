@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Deploying a finetuned model with fast.ai
+title: Deploying a fine-tuned classifier
 date: 2024-09-29 00:00:00
-description: The power of doing less.
+description: Leveraging fast.ai capabilities for a quick resnet model fine-tuning and delivery.
 tags: ai
 categories: exploration
 featured: false
 typograms: true
+thumbnail: assets/img/lotr-races.jpg
 ---
 
 Two chapters into the [fast.ai course](https://course.fast.ai/) and we are already equipped to deploy a fine-tuned classifier that operates on a close-to-human level task without too much data nor expensive hardware (actually free)!
 
-{% include figure.liquid loading="eager" path="assets/img/lotr-races-2.png" class="img-fluid rounded z-depth-1 w-md-50 float-md-right ml-md-2"%}
+{% include figure.liquid loading="eager" path="assets/img/lotr-races-2.png" class="img-fluid rounded z-depth-1 w-md-50 float-md-right ml-md-2" zoomable=true %}
 
 As a pet project I ended up building **[a LOTR race classifier](https://gerovlabs.com/ai-models/)**. It achieves quite good accuracy (__75%__ on my validation set, I felt it did even better during QA) given how much I'm relying on defaults and how little (and dirty) the custom input dataset is.
 
@@ -53,7 +54,7 @@ def fetch_images_for_race():
 
 Training and cleaning the dataset is well covered in [the second chapter](https://course.fast.ai/Lessons/lesson2.html) of the fast.ai course although I'll share some issues encountered on the way:
 
-{% include figure.liquid loading="eager" path="assets/img/after-cleaning.png" class="img-fluid rounded float-right mx-2 w-50"%}
+{% include figure.liquid loading="eager" path="assets/img/after-cleaning.png" class="img-fluid rounded float-right mx-2 w-50" zoomable=true %}
 
 - `Duplicate images`: I realised quite a few of the images I was downloading were duplicates
 - `Using a non-structured dataset`: searching the web for images implies a huge bias on what kind of results you would get and how accurate it is. I had to adjust my queries multiple times until I liked enough the shape of the data.
@@ -117,12 +118,21 @@ return JsonResponse(result)
 
 ### Next steps
 
-{% include figure.liquid loading="eager" path="assets/img/lotr-races-1.png" class="img-fluid rounded z-depth-1 float-right ml-2" width="150px"%}
+{% include figure.liquid loading="eager" path="assets/img/lotr-races-1.png" class="img-fluid rounded z-depth-1 float-right ml-2" width="150px" zoomable=true %}
 
-Now that there is some backbone and we got some experience deploying simple models we should be all set to experiment with fast.ai configurations, input data, different architectures and datasets while digging into deep learning.
+Now that there is some backbone and we got some experience deploying simple models we should be all set to experiment with fast.ai configurations, input data, different architectures and datasets while [digging into deep learning](https://course.fast.ai/Lessons/lesson3.html).
 
 Some immediately useful community contributions that come to mind are:
 
 - Improve the [Image Classifier Cleaner](https://docs.fast.ai/vision.widgets.html#imageclassifiercleaner) to add additional features that could speed up dramatically the data cleaning process
 - Create a new widget to enable quicker feedback loops and labeling while downloading data from platforms like DDG
 - Improve course notebooks (there are already open PRs handling this on fast.ai)
+
+### Useful links
+
+- [Custom LOTR race classifier](https://gerovlabs.com/ai-models/)
+- [HG + Gradio deployment](https://huggingface.co/spaces/sgerov/lotr-races)
+- [Kaggle training notebook](https://www.kaggle.com/code/savagerov/training-a-model-lotr)
+- [Django toy server](https://github.com/sgerov/gerovlabs-models-serve)
+- [Second lesson of fast.ai course](https://course.fast.ai/Lessons/lesson2.html)
+- [Chapter 2 of fast.ai book](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
