@@ -11,7 +11,7 @@ typograms: true
 
 Two chapters into the [fast.ai course](https://course.fast.ai/) and we are already equipped to deploy a fine-tuned classifier that operates on a close-to-human level task without too much data nor expensive hardware (actually free)!
 
-{% include figure.liquid loading="eager" path="assets/img/lotr-races-2.png" class="img-fluid rounded z-depth-1 w-50 float-right ml-2"%}
+{% include figure.liquid loading="eager" path="assets/img/lotr-races-2.png" class="img-fluid rounded z-depth-1 w-md-50 float-md-right ml-md-2"%}
 
 As a pet project I ended up building **[a LOTR race classifier](https://gerovlabs.com/ai-models/)**. It achieves quite good accuracy (__75%__ on my validation set, I felt it did even better during QA) given how much I'm relying on defaults and how little (and dirty) the custom input dataset is.
 

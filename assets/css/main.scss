@@ -37,3 +37,17 @@ pre[class="typogram"] code {
   text-align: center;
   display: block;            /* Block to ensure full width usage */
 }
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50% !important;
+  }
+
+  .float-md-right {
+    float: right;
+  }
+
+  .ml-md-2 {
+    margin-left: 2px;
+  }
+}
