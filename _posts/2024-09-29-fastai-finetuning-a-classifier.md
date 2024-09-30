@@ -8,6 +8,7 @@ categories: exploration
 featured: false
 typograms: true
 thumbnail: assets/img/lotr-races.jpg
+og_image: assets/img/lotr-races.jpg
 ---
 
 Two chapters into the [fast.ai course](https://course.fast.ai/) and we are already equipped to deploy a fine-tuned classifier that operates on a close-to-human level task without too much data nor expensive hardware (actually free)!
