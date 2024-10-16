@@ -424,14 +424,14 @@ $$
 {\begin{cases}
   \frac \partial {\partial {\hat y_i}} (-y_i + \hat y_i) & {y_i - \hat y_i} < 0 \\
   \frac \partial {\partial {\hat y_i}} (y_i - \hat y_i) & {y_i - \hat y_i} > 0 \\
-  0 & {y_i - \hat y_i} = 0
+  undefined & {y_i - \hat y_i} = 0
 \end{cases}}
 =
 $$ $$
 {\begin{cases}
   1 & {y_i - \hat y_i} < 0 \\
   -1 & {y_i - \hat y_i} > 0 \\
-  0 & {y_i - \hat y_i} = 0
+  undefined & {y_i - \hat y_i} = 0
 \end{cases}}
 $$
 
@@ -444,7 +444,7 @@ And we got our `Quadratic MAE` full derivative with respect to `a`:
 $$ \frac \partial {\partial a} MAE = $$ $$ {\begin{cases}
   x^2 & {y_i - \hat y_i} < 0 \\
   -x^2 & {y_i - \hat y_i} > 0 \\
-  0 & {y_i - \hat y_i} = 0
+  undefined & {y_i - \hat y_i} = 0
 \end{cases}} $$
 
 Repeating the exact same process for `b` the only change is the [partial derivative](https://en.wikipedia.org/wiki/Partial_derivative) of our quadratic:
@@ -452,7 +452,7 @@ Repeating the exact same process for `b` the only change is the [partial derivat
 $$ \frac \partial {\partial b} MAE = $$ $$ {\begin{cases}
   x & {y_i - \hat y_i} < 0 \\
   -x & {y_i - \hat y_i} > 0 \\
-  0 & {y_i - \hat y_i} = 0
+  undefined & {y_i - \hat y_i} = 0
 \end{cases}} $$
 
 and the same for `c`:
@@ -460,7 +460,7 @@ and the same for `c`:
 $$ \frac \partial {\partial c} MAE = $$ $$ {\begin{cases}
   1 & {y_i - \hat y_i} < 0 \\
   -1 & {y_i - \hat y_i} > 0 \\
-  0 & {y_i - \hat y_i} = 0
+  undefined & {y_i - \hat y_i} = 0
 \end{cases}} $$
 
 Now we have a way to know how much of an impact a unit change on `a`, `b` or `c` has on our error function with our quadratic!
@@ -604,7 +604,7 @@ which for our sample run was `MAE: 1.025`.
 
 ## Conclusion
 
-We have been able to use Gradient Descent to predict the values of a quadratic function with only dirty sample data! We even almost got right the value of gravity! There is a big assumption we've done though: we knew our sensor data (throwing a ball vertically) followed a quadratic function. 
+We have been able to use Gradient Descent to predict the coefficients of a quadratic function with only dirty sample data! We even almost got right the value of gravity! There is a big assumption we've done though: we knew our sensor data (throwing a ball vertically) followed a quadratic function. 
 
 In a next post we will see how we can generalise what we learnt here to resolve more complicated problems like those mentioned in the beginning that don't necessarily follow a quadratic function with the help of Rectified Linear Units.
 
