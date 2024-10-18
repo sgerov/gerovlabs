@@ -232,7 +232,7 @@ Let's start with a simpler example, a line $$ f(x) = x $$:
 }
 ```
 
-By looking at the plot it's easy to conclude that for each unit increment of `x`, `y` would increment by 1. This is also known as the *slope* of a line (or *rate of change* or *gradient*) and it's described by $$ slope = \frac {rise} {run} $$, i.e. $$ slope = \frac {y_2 - y_1} {x_2 - x_1} $$.
+By looking at the plot it's easy to conclude that for each unit increment of `x`, `y` would increment by 1. This is also known as the *slope* of the tangent line at that point (or *rate of change*) and it's described by $$ slope = \frac {rise} {run} $$, i.e. $$ slope = \frac {y_2 - y_1} {x_2 - x_1} $$.
 
 Let's now have a look at a more complicated example, a non-linear function like $$ f(x) = x^2 $$:
 
@@ -283,9 +283,9 @@ Let's now have a look at a more complicated example, a non-linear function like 
 }
 ```
 
-Here it becomes slightly trickier to know by how much would `y` change if `x` changed by one because depending on where you look you would get a different slope due to the lack of linearity. For example from `x=4` to `x=3` it's $$ \frac {16 - 9} {4 - 3} = 7 $$ but from `x=3` to `x=2` we get $$ \frac {9 - 4} {3 - 2} = 5 $$.
+Here it becomes slightly trickier to know by how much would `y` change if `x` changed by one because depending on where you look you would get a different slope due to the lack of linearity in our function. For example from `x=4` to `x=3` it's $$ \frac {16 - 9} {4 - 3} = 7 $$ but from `x=3` to `x=2` we get $$ \frac {9 - 4} {3 - 2} = 5 $$.
 
-Here is where differentiation kicks in! If we zoom in the gradient of `x` further then `3` to `2` and look at values closer to `2` we would be getting closer to the real slope (or *gradient*) in that point (`x=2`):
+Here is where differentiation kicks in! If we zoom in the slope for `x` further then `3` to `2` and look at values closer to `2` we would be getting closer to the real slope of the tangent line in that point (`x=2`):
 
 - `3.000` to `2`: $$ \frac {9 - 4} {3 - 2} = 5 $$
 - `2.500` to `2`: $$ \frac {6.25 - 4} {2.5 - 2} = 4.5 $$
@@ -293,7 +293,7 @@ Here is where differentiation kicks in! If we zoom in the gradient of `x` furthe
 - `2.010` to `2`: $$ \frac {4.0401 - 4} {2.01 - 2} = 4.01 $$
 - `2.001` to `2`: $$ \frac {4.004001 - 4} {2.001 - 2} = 4.001 $$
 
-Looks like we are approaching the slope of `4`! We could try the same process from `1` to `2` and we would be approaching the same number. Since `y = f(x)` we could express the difference (or *slope* or *gradient*) of any the two points like this:
+Looks like we are approaching the slope of `4`! We could try the same process from `1` to `2` and we would be approaching the same number. Since `y = f(x)` we could express the difference (or *slope* of tangent line) of any the two points like this:
 
 $$
 \frac {f(x_2) - f(x_1)} {x_2 - x_1}
@@ -321,13 +321,13 @@ We just derived $$ x^2 $$! If you recall [the power rule](https://en.wikipedia.o
 - Leibniz notation: $$ \frac d {dx} f(x) = nx^{n-1} $$ 
 - Euler notation: $$ \frac \partial {\partial x} f(x) = nx^{n-1} $$
 
-[There are more rules](https://en.wikipedia.org/wiki/Differentiation_rules) for differentiation which will allow us to get the gradient (or *slope*) for any differentiable function (continuous, smooth and without tangents).
+[There are more rules](https://en.wikipedia.org/wiki/Differentiation_rules) for differentiation which will allow us to get the *slope* (or *rate of change*) for any differentiable function (continuous, smooth and without tangents).
 
-Actually the slope we got earlier by approximating `x=2` was `4`, i.e. $$ gradient = f'(x^2) = 2x = 2*2 = 4 $$.
+Actually the slope we got earlier by approximating `x=2` was `4`, i.e. $$ slope = f'(x^2) = 2x = 2*2 = 4 $$.
 
 ### Impact of changing each parameter
 
-At this point, we have defined our problem statement, we are able to measure its' error for certain parameters and we are able to see how much a change in each parameter impacts that error by using derivatives! As a reminder, the function we are trying to minimise as described above is the `MAE`:
+At this point, we have defined our problem statement, we are able to measure its' error for certain parameters and we are able to see how much a change in each parameter impacts that error by using the derivatives of each parameter (or *gradient*)! As a reminder, the function we are trying to minimise as described above is the `MAE`:
 
 $$ 
 MAE = \frac 1 n \sum _{i=1} ^n |y_i - \hat y_i|
@@ -463,7 +463,7 @@ $$ \frac \partial {\partial c} MAE = $$ $$ {\begin{cases}
   undefined & {y_i - \hat y_i} = 0
 \end{cases}} $$
 
-Now we have a way to know how much of an impact a unit change on `a`, `b` or `c` has on our error function with our quadratic!
+Now we have a way to calculate how much of an impact a unit change on `a`, `b` or `c` has on our error function with our quadratic. That vector is our *gradient*.
 
 ### Gradient descent
 
@@ -476,7 +476,7 @@ We are all set to find a solution to our original problem statement through Grad
 The slope in our case is the direction to minimise our error and gradient descent would look like:
 
 - Start with a random values for `a`, `b` and `c` coefficients (step 0)
-- Get the gradients for `a`, `b` and `c`
+- Get the slopes for `a`, `b` and `c`
 - Update `a`, `b` and `c` in the opposite direction of the gradient (since we want to decrease the error) by applying a learning rate to ensure we move in small steps (and not whole units)
 - Repeat until we reduced the error rate enough or reach a slope of 0
 
