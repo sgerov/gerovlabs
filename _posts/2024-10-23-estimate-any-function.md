@@ -8,7 +8,7 @@ categories: exploration
 featured: false
 typograms: true
 thumbnail: assets/img/gd-closest-2relu.png
-og_image: assets/img/gd-closest-2relu.png
+og_image: https://gerovlabs.com/assets/img/gd-closest-2relu.png
 ---
 
 We already described in [Gradient Descent from scratch]({% post_url 2024-10-16-gradient-descent-from-scratch %}) how we can find all 3 parameters of a single dimension quadratic function (ball height `h` for time `t`). Let's now extend on that knowledge to see if we can optimise parameters with no prior knowledge of the underlying function of our data.
