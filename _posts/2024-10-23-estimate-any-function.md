@@ -165,7 +165,7 @@ The exact same process applies if we increased the number of independent variabl
 This is a sample 3-D plot where a ReLu is applied on a 2 dimensional input (`x` and `y`). The main difference with a single dimension is that now Gradient Descent will be looking on more axes to find its way through the planes (if functions are linear). Check [Khans' Academy introduction to 3D graphs](https://www.youtube.com/watch?v=2DRmfxkH_VI&list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7&index=3) if you need help with multivariable visualisation.
 
 <div class="text-center">
-  {% include figure.liquid loading="eager" path="assets/img/relu-3d.webp" class="img-fluid rounded z-depth-1 w-50 " zoomable=true %}
+  {% include figure.liquid loading="eager" path="assets/img/relu-3d" class="img-fluid rounded z-depth-1 w-50 " zoomable=true %}
 </div>
 <div class="caption">
     ReLu with 2 dimensions (plot by <a href="https://towardsdatascience.com/how-a-neuron-in-a-2d-artificial-neural-network-bends-space-in-3d-visualization-d234e8a8374e">Avinash Dubey</a>)
