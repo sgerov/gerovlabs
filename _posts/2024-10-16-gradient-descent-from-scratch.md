@@ -30,7 +30,7 @@ Let's look at some samples of some functions we might be interested in:
 ----------------->|  f(x)  |---------------->
                   +--------+
 
-      picture     +--------+ person presence
+      picture     +--------+ identify number
 ----------------->|  f(x)  |---------------->
                   +--------+
 
