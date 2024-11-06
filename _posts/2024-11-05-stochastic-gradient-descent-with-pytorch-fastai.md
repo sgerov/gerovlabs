@@ -2,11 +2,10 @@
 layout: post
 title: Stochastic Gradient Descent (SGD) with PyTorch and Fast.ai
 date: 2024-11-05 00:00:00
-description: Going from a manual implementation of gradient descent to SGD through PyTorch and Fast.AI
+description: Enhancing vanilla Gradient Descent performance to be able to converge on a minimum much quicker with Stochastic Gradient Descent (SGD).
 tags: ai
 categories: exploration
 featured: false
-typograms: true
 ---
 
 In previous posts we implemented Gradient Descent in Ruby to [approximate a quadratic function]({% post_url 2024-10-16-gradient-descent-from-scratch %}), extended it [to any function]({% post_url 2024-10-23-estimate-any-function %}) with the help of PyTorch tensors and gradients calculation and made a [simple digit classifier]({% post_url 2024-11-02-from-ball-to-computer-vision %}).
