@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From throwing a ball to computer vision
+title: From approximating math functions to computer vision
 date: 2024-11-02 00:00:00
 description: Let's look at how neural networks allow to solve predictions beyond quadratic functions.
 tags: ai
