@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails, Tailwindcss and Kamal on Apple Silicon
-date: 2024-11-22 00:00:00
+date: 2025-01-25 00:00:00
 description: The default setup for tailwindcss-rails does not work with Apple Silicon. This post will show you how to fix it.
 tags: rails
 categories: exploration
